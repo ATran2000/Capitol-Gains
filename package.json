@@ -1,18 +1,11 @@
 {
-  "homepage": "http://ATran2000.github.io/Capitol-Gains",
   "name": "capitol-gains",
   "version": "1.0.0",
   "main": "",
   "scripts": {
     "start": "npm start --prefix server",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "react-scripts build",
     "install-client": "cd client && npm install && npm run build && cd ..",
     "install-server": "cd server && npm install && cd .. ",
     "heroku-postbuild": "npm run install-client && npm run install-server"
-  },
-  "devDependencies": {
-    "gh-pages": "^5.0.0"
   }
 }
