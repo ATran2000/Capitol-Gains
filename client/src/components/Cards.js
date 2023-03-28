@@ -174,7 +174,7 @@ function Cards() {
         }
   
         // make api call
-        const response = await fetch('http://localhost:5000/api', options);
+        const response = await fetch('https://us-central1-capitol-gains.cloudfunctions.net/app/api', options);
         // get response object as json
         const body = await response.json();
         console.log(body.message);
